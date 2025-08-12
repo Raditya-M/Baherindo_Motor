@@ -1,32 +1,68 @@
-<nav class="flex justify-center bg-[#1e293b]">
-    <div class="flex items-center justify-between w-full px-4 py-2 my-5">
+<nav class="glass-effect sticky top-0 z-50 border-b border-gray-200/20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+            <!-- Logo -->
+            <a href="/" class="flex items-center space-x-3 group">
+                <div class="p-2 rounded-xl bg-gradient-to-r from-blue-600 to-purple-600 group-hover:from-blue-700 group-hover:to-purple-700 transition-all duration-300">
+                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                    </svg>
+                </div>
+                <span class="text-xl font-bold bg-gradient-to-r from-gray-900 to-gray-600 bg-clip-text text-transparent">
+                    Baherindo Motors
+                </span>
+            </a>
 
-<div class="flex">
-    <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-        <path fill="currentColor" d="M5.99997 17c-.55229 0-1 .4477-1 1s.44771 1 1 1h.01c.55228 0 1-.4477 1-1s-.44772-1-1-1h-.01ZM18 17c-.5523 0-1 .4477-1 1s.4477 1 1 1h.01c.5523 0 1-.4477 1-1s-.4477-1-1-1H18Z"/>
-        <path fill="currentColor" fill-rule="evenodd" d="M12 13c.5523 0 1 .4477 1 1v.5858l.4142-.4142c.3905-.3905 1.0237-.3905 1.4142 0 .3905.3905.3905 1.0237 0 1.4142L14.4141 16l.5859.0001c.5523 0 1 .4477 1 1s-.4478 1-1.0001 1L14.4141 18l.4143.4143c.3905.3906.3905 1.0237 0 1.4142-.3906.3906-1.0237.3905-1.4143 0L13 19.4143v.5858c0 .5522-.4477 1-1 1s-1-.4478-1-1v-.5859l-.4143.4142c-.3905.3906-1.02365.3906-1.41417 0-.39053-.3905-.39053-1.0236 0-1.4142L9.58571 18l-.58572.0001c-.55228 0-1.00001-.4477-1.00002-1-.00001-.5523.44769-1 .99998-1L9.58571 16l-.41416-.4141c-.39054-.3905-.39056-1.0237-.00005-1.4142.39052-.3905 1.0237-.3906 1.4142 0l.4143.4142V14c0-.5523.4477-1 1-1Z" clip-rule="evenodd"/>
-        <path fill="currentColor" d="M9.21869 3.96216c1.18841-.77809 2.61801-1.10041 4.02531-.90756 1.4073.19285 2.6974.88787 3.6327 1.95696.8431.96375 1.3466 2.17293 1.4406 3.44244.6029.16797 1.1584.48908 1.6088.93946C20.6137 10.0811 21 11.0137 21 11.9862c0 .9449-.3677 1.9573-1.0739 2.6636-.6417.6416-1.4561.9281-2.2516.9899-.1439-.2824-.3312-.539-.5532-.761 0-.7677-.2929-1.5355-.8787-2.1213-.5858-.5858-1.3535-.8787-2.1213-.8787-.5429-.5429-1.2929-.8786-2.1213-.8786-.8285 0-1.5785.3358-2.12139.8787-.76778 0-1.53555.2929-2.12133.8788-.58574.5857-.87861 1.3535-.87862 2.1212-.18576.1858-.34727.3958-.47938.6249-.77455-.2033-1.48895-.6091-2.06499-1.1851C3.47996 13.4642 3 12.3055 3 11.0973c0-1.1581.38455-2.34287 1.27157-3.22989.74279-.74279 1.74607-1.18271 2.75928-1.2962.45424-1.06098 1.21293-1.97073 2.18784-2.60905Z"/>
-    </svg>      
-        <a href="#" class="text-white text-lg font-bold">Baherindo Motor</a>
-</div>
+            <!-- Desktop Navigation -->
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="/--" class="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200">Motors</a>
+                <a href="/-" class="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200">Cars</a>
+                <a href="/about" class="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200">About</a>
+                <a href="/contact" class="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200">Contact</a>
+            </div>
 
-        <div class="hidden md:flex space-x-4">
-            <a href="/" class="text-white hover:text-gray-300">Home</a>
-            <a href="/about" class="text-white hover:text-gray-300">About</a>
-            <a href="/contact" class="text-white hover:text-gray-300">Contact</a>
+            <!-- Contact Info -->
+            <div class="hidden lg:flex items-center space-x-3">
+                <div class="p-2 rounded-full bg-green-100">
+                    <i class="fab fa-whatsapp text-green-600"></i>
+                </div>
+                <div>
+                    <a href="https://wa.me/6281385260075" target="_blank" class="text-sm font-semibold text-gray-900 hover:text-green-600 transition-colors">
+                        R. Mahendar
+                    </a>
+                    <p class="text-xs text-gray-500">0813-8526-0075</p>
+                </div>
+            </div>
+
+            <!-- Mobile menu button -->
+            <button class="md:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors" onclick="toggleMobileMenu()">
+                <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
         </div>
 
-        <div class="flex items-center gap-3">
-            <i class="fab fa-whatsapp text-2xl text-green-500"></i>
-            <div>
-              <a href="https://wa.me/6281111111111" target="_blank" class="text-white hover:text-gray-300 font-medium">Dolly Saputra</a>
-              <p class="text-white hover:text-gray-300 text-sm">0811-1111-1111</p>
+        <!-- Mobile Navigation -->
+        <div id="mobile-menu" class="hidden md:hidden py-4 border-t border-gray-200/20">
+            <div class="flex flex-col space-y-3">
+                <a href="/--" class="text-gray-700 hover:text-blue-600 font-medium py-2 transition-colors">Motors</a>
+                <a href="/-" class="text-gray-700 hover:text-blue-600 font-medium py-2 transition-colors">Cars</a>
+                <a href="/about" class="text-gray-700 hover:text-blue-600 font-medium py-2 transition-colors">About</a>
+                <a href="/contact" class="text-gray-700 hover:text-blue-600 font-medium py-2 transition-colors">Contact</a>
+                <div class="pt-3 border-t border-gray-200/20">
+                    <a href="https://wa.me/6281385260075" target="_blank" class="flex items-center space-x-2 text-green-600 font-medium">
+                        <i class="fab fa-whatsapp"></i>
+                        <span>WhatsApp: 0813-8526-0075</span>
+                    </a>
+                </div>
             </div>
-          </div>
-          
-    {{-- <ul class="flex gap-3 my-5 text-white">
-        <li><a href="/">Home</a></li>
-        <li><a href="about">About</a></li>
-        <li><a href="contact">Contact</a></li>
-    </ul> --}}
+        </div>
+    </div>
+
+    <script>
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+    </script>
 </nav>

@@ -3,18 +3,19 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\MobilBaherindo;
 use App\Models\MotorBaherindo;
-use Illuminate\Routing\Controller;
 
-class WelcomeController extends Controller
+class HomeController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
+        $mobil = MobilBaherindo::all();
         $motor = MotorBaherindo::all();
-        return view ('welcome', compact('motor'));
+        return view('home', compact('mobil', 'motor'));
     }
 
     /**
